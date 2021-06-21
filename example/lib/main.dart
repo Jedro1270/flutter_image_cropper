@@ -95,11 +95,16 @@ class _MyHomePageState extends State<MyHomePage> {
         sourcePath: imageFile!.path,
         aspectRatioPresets: Platform.isAndroid
             ? [
+                CropAspectRatioPreset.original,
                 CropAspectRatioPreset.square,
                 CropAspectRatioPreset.ratio3x2,
-                CropAspectRatioPreset.original,
                 CropAspectRatioPreset.ratio4x3,
-                CropAspectRatioPreset.ratio16x9
+                CropAspectRatioPreset.ratio5x3,
+                CropAspectRatioPreset.ratio5x4,
+                CropAspectRatioPreset.ratio7x5,
+                CropAspectRatioPreset.ratio16x9,
+                CropAspectRatioPreset.ratio191x1,
+                CropAspectRatioPreset.ratio4x5,
               ]
             : [
                 CropAspectRatioPreset.original,
@@ -109,7 +114,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 CropAspectRatioPreset.ratio5x3,
                 CropAspectRatioPreset.ratio5x4,
                 CropAspectRatioPreset.ratio7x5,
-                CropAspectRatioPreset.ratio16x9
+                CropAspectRatioPreset.ratio16x9,
+                CropAspectRatioPreset.ratio191x1,
+                CropAspectRatioPreset.ratio4x5,
               ],
         androidUiSettings: AndroidUiSettings(
             toolbarTitle: 'Cropper',

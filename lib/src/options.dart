@@ -288,6 +288,8 @@ class IOSUiSettings {
 }
 
 String aspectRatioPresetName(CropAspectRatioPreset? preset) {
+  print(preset);
+
   switch (preset) {
     case CropAspectRatioPreset.original:
       return 'original';
